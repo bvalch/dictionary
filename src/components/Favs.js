@@ -61,7 +61,6 @@ const Favs = ({
     );
   });
 
-console.log(favs.length)
 
   return (
     <div>
@@ -69,7 +68,7 @@ console.log(favs.length)
         <h1 className="headerContainer">Saved definitions</h1>
         <ul className="favscontainer"> {favNodes}</ul>
       </div>
-      <h1 className="headerContainer">{!favs.length>0? " Nothing here yet": "Click on word to see definition"}</h1>
+      <h1 className="headerContainer">{!favs?.length>0? " Nothing here yet": "Click on word to see definition"}</h1>
       <div className="fav-def-container">{definitionNodes}</div>
     </div>
   );

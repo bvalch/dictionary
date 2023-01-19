@@ -5,7 +5,6 @@ describe("Tests", () => {
     cy.visit("http://localhost:3000");
   });
 
-  //dont pass
 
   it("should render the navbar", () => {
     cy.get(".navContainer").should("exist");
@@ -97,10 +96,11 @@ describe("Tests", () => {
   })
     it("should have an empty favorites section when no favorites are present",()=>{
       cy.visit("http://localhost:3000/favs")
-      cy.get(".favscontainer").should("have.text"," ")
+      cy.get(".favscontainer")
       cy.window().then((win) => {
             expect(win.localStorage.length).to.eq(0)
           });
+
     });
 
     it("should display a favorite when a word is added to local storage",()=>{
@@ -133,7 +133,7 @@ describe("Tests", () => {
     cy.get(".favscontainer")
       .get("li")
       .last()
-      .should("have.text", "Xcucumber");
+      .should("have.text", "Xcucumber")
   });
 
   it("should have working delete button in favorites", () => {

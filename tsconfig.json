@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "baseUrl": "src",
+      "types": [
+        "cypress"
+      ]
+    },
+    "include": [
+      "**/*.*"
+    ]
+  }

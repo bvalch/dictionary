@@ -1,0 +1,197 @@
+.search-bar {
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin-top: 1%;
+  text-align: center;
+}
+.label {
+  font-size: xx-large;
+}
+.input {
+  font-size: x-large;
+  border: none;
+  min-height: 5vh;
+  min-width: 40vw;
+  max-width: 40vw;
+  align-self: center;
+  margin-top: 3%;
+}
+.input:hover,
+.input:focus,
+.input:active {
+  background-color: rgb(254, 244, 228);
+  outline: 0.5px solid pink;
+}
+
+.input::placeholder {
+  text-align: center;
+}
+.button {
+  width: 30%;
+  min-height: 2.5rem;
+  align-self: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: rgb(206, 186, 184);
+  border: none;
+  border-radius: 5px;
+  font-size: x-large;
+}
+.buttonSave {
+  width: 20%;
+  min-height: 2.5rem;
+  align-self: center;
+  margin-bottom: 3%;
+  background-color: rgb(206, 186, 184);
+  border: none;
+  border-radius: 5px;
+  font-size: x-large;
+}
+.buttonSave:hover {
+  background-color: rgb(158, 108, 115);
+}
+.button:hover {
+  background-color: rgb(158, 108, 115);
+}
+
+.navContainer {
+  display: block;
+  min-width: 60vw;
+  margin-top: 3%;
+}
+
+.nav {
+  font-size: x-large;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+}
+.nav > a {
+  text-decoration: none;
+  color: black;
+}
+.nav > a:hover {
+  color: grey;
+  font-weight: 600;
+}
+.nodesContainer {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  display: flex;
+}
+.infoCard {
+  border: 2px solid black;
+  border-radius: 5px;
+  min-width: 40%;
+  max-width: 40%;
+  margin-bottom: 3%;
+  margin-top: 1%;
+  text-align: center;
+  background-color: rgb(214, 195, 166);
+  border-radius: 5px;
+}
+.headerContainer {
+  text-align: center;
+}
+.headerContainer > h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+.headerContainer > h1 {
+  margin-top: 0;
+  font-size: 3em;
+}
+.errorMessage {
+  text-align: center;
+  color: red;
+  background-color: pink;
+  border-radius: 10px;
+  font-size: 0.7em;
+  max-width: 30vw;
+  overflow: auto;
+  margin-top: 3%;
+}
+
+.message {
+  text-align: center;
+  color: rgb(1, 1, 1);
+  background-color: lightgreen;
+  border-radius: 10px;
+  font-size: 0.7em;
+  min-width: 30vw;
+  overflow: auto;
+  margin-top: 3%;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+.show-message {
+  opacity: 1;
+}
+.synonym:hover {
+  background-color: rgb(158, 108, 115);
+  cursor: pointer;
+  border-bottom: 2px black;
+}
+.partofspeech {
+  background-color: rgb(206, 186, 184);
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+}
+
+/*   
+.cont{
+  border: 1px solid red;
+
+} */
+
+.favscontainer {
+  border: 1px solid rgb(142, 109, 109);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 40vw;
+  min-height: 20vh;
+}
+.list-item {
+  display: flex;
+  
+  flex-basis: 30%;
+  list-style-type: none;
+  font-size: large;
+  max-width: 12vw;
+  max-height: 3vh;
+  justify-content: flex-start;
+}
+.list-item-div:hover {
+  color: red;
+  cursor: default;
+  font-weight: 600;
+}
+
+.deletebutton {
+  color: red;
+  background-color: azure;
+  border-radius: 5px;
+  min-height: 1vh;
+  max-height: 1.5vh;
+  min-width: 3vw;
+}
+
+.header {
+  text-align: center;
+}
+
+.deletebutton:hover {
+  background-color: red;
+  cursor: pointer;
+}
+.fav-def-container {
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
